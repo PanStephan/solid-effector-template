@@ -1,0 +1,43 @@
+{
+  "name": "solid-effector-template",
+  "version": "0.0.1",
+  "description": "A simple template for solid and effector (use FSD)",
+  "main": "index.js",
+  "author": "“Stephan” <“stephan.startsev@gmail.com”>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "cross-env TS_NODE_PROJECT=\"webpack/tsconfig.json\" webpack --config webpack/configs/prod.conf.ts",
+    "start": "cross-env TS_NODE_PROJECT=\"webpack/tsconfig.json\" webpack-dev-server --config webpack/configs/dev.conf.ts"
+  },
+  "engines": {
+    "node": ">= 16.14.0",
+    "npm": ">= 8.5.5"
+  },
+  "dependencies": {
+    "effector": "22.3.0",
+    "solid-js": "1.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.19.6",
+    "@types/webpack": "5.28.0",
+    "babel-loader": "8.2.5",
+    "babel-preset-solid": "1.6.0",
+    "copy-webpack-plugin": "11.0.0",
+    "cross-env": "7.0.3",
+    "css-loader": "6.7.1",
+    "css-minimizer-webpack-plugin": "4.2.2",
+    "html-webpack-plugin": "5.5.0",
+    "mini-css-extract-plugin": "2.6.1",
+    "source-map-loader": "4.0.1",
+    "style-loader": "3.3.1",
+    "ts-loader": "9.4.1",
+    "ts-node": "10.9.1",
+    "tsconfig-paths-webpack-plugin": "4.0.0",
+    "typescript": "4.8.4",
+    "webpack": "5.74.0",
+    "webpack-bundle-analyzer": "4.6.1",
+    "webpack-cli": "4.10.0",
+    "webpack-dev-server": "4.11.1"
+  }
+}
